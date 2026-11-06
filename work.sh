@@ -31,7 +31,7 @@ while :; do
         name=$(printf '%03d' "$number")
         candidate="$shared_dir/$name"
 
-        if [ ! -e "$candidate" ]; then
+        if [ ! -e "$candidate" ] && [ ! -L "$candidate" ]; then
             current_file=$candidate
   	    counter=$((counter + 1))
    	    printf '%s %s\n' "$container_id" "$counter" > "$current_file"
