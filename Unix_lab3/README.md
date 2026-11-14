@@ -6,7 +6,7 @@
 
 Сборка
 
-g++ -std=c++17 hardlink_dedup.cpp -o hardlink_dedup
+g++ -std=c++17 main.cpp -o hardlink_dedup
 
 Запуск
 
